@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+}
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.container-custom {
+  max-width: 1920px !important;
+  margin: 0 auto !important;
+}
+.top-header {
+  background: url(../images/hero-bg.png);
+  background-size: cover;
+  background-position: 71% 100%;
+  background-repeat: no-repeat;
+}
+
+/*=============  
+top navbar start
+=============*/
+.scrolled {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-nav {
+  gap: 57px;
+}
+.nav-item a {
+  font-family: "Raleway";
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+/*=============  
+top navbar end
+=============*/
+
+/*=============  
+hero section start
+=============*/
+
+.hero {
+  padding: 291px 0 400px;
+  text-align: center;
+}
+.tagline {
+  /* border: solid; */
+  position: relative;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 94px;
+  text-align: center;
+  text-transform: capitalize;
+  padding-bottom: 18px;
+}
+.tagline::after {
+  content: "";
+  width: 108px;
+  height: 2px;
+  display: in-block;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero p {
+  max-width: 933px;
+  padding-top: 28px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* or 150% */
+
+  text-align: center;
+}
+
+/*=============  
+hero section end
+=============*/
+
+/*=============  
+about us section start
+=============*/
+
+.about-us {
+  padding: 185px 0 140px;
+}
+
+.about-us-image::after,
+.about-us-image::before {
+  content: "";
+  background: linear-gradient(125.28deg, #0ea1ef 0%, #064bca 100%);
+  opacity: 0.2;
+  border-radius: 20px;
+  display: block;
+  width: 290px;
+  height: 244px;
+  position: absolute;
+  z-index: -1;
+}
+.about-us-image::after {
+  left: 0;
+  top: 0;
+}
+.about-us-image::before {
+  bottom: 0;
+  right: 0;
+}
+.about-us h3,
+.expertise h3 {
+  font-family: "Raleway";
+  padding-bottom: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  text-transform: capitalize;
+}
+.about-us p,
+.expertise p {
+  font-family: "Raleway";
+  max-width: 815px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  /* or 175% */
+
+  color: black;
+}
+
+/*=============  
+about us section end
+=============*/
+/*=============  
+expertise section start
+=============*/
+
+.section-header {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  text-transform: capitalize;
+  color: #000;
+  margin-bottom: 20px;
+}
+.para {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #000;
+  opacity: 0.8;
+}
+.expertise-section .para {
+  max-width: 720px;
+  margin-inline: auto;
+  text-align: center;
+  margin-bottom: 130px;
+}
+.expertise-section .section-header {
+  position: relative;
+}
+.expertise-section .section-header::after {
+  content: "";
+  display: inline-block;
+  width: 488px;
+  height: 492px;
+  position: absolute;
+  left: -75px;
+  top: -150px;
+  background: url(../images/pattern.png);
+  z-index: -1;
+}
+.expertise-section::after {
+  content: "";
+  display: inline-block;
+  height: 703px;
+  width: 100%;
+  background: url(../images/solid.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: multiply;
+  position: absolute;
+  bottom: -120px;
+  z-index: -1;
+  border-radius: 50px 50px 0 0;
+}
+
+/* Slider */
+.expertise {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.expertise-inner {
+  font-family: "Raleway";
+  color: #000;
+  position: relative;
+  min-height: 478px;
+  /* max-height: 478px;
+  max-width: 478px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  margin-inline: 15px;
+}
+/* .expertise-inner img {
+  border: 20px solid #fff;
+} */
+.expertise img {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 478px;
+  max-height: 478px;
+  object-fit: contain;
+}
+.expertise-inner::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 353.78px;
+  height: 353.78px;
+  left: 60px;
+  top: 60px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("images/Rectangle 38 (2).png");
+  border: 20px solid #ffffff;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
+  border-radius: 50px;
+  transform: rotate(45deg);
+}
+.expertise__header {
+  font-family: "Raleway";
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.expertise .expertise__details {
+  color: #fff !important;
+  max-width: 522px;
+  padding-inline: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  display: none;
+}
+.expertise-inner:hover .expertise__details {
+  display: block;
+}
+/* Slides Hover Effects */
+.slick-slide .expertise-inner:hover {
+  transform: scale(1.7);
+}
+/* ======= Left Slide ======= */
+.slick-left .expertise-inner:hover {
+  transform-origin: left;
+  z-index: 999;
+}
+/* ======= Center Slide ======= */
+.slick-center .expertise-inner:hover {
+  transform-origin: center center;
+  z-index: 999;
+}
+/* ======= Right Slide ======= */
+.slick-right .expertise-inner:hover {
+  transform-origin: right;
+  z-index: 999;
+}
+
+.slides-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 100px;
+}
+.slider-dots {
+  display: flex;
+  align-items: center;
+}
+.slick-dots {
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding-left: 0;
+}
+.slick-dots li {
+  background: #fff;
+  opacity: 0.5;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.slick-dots li::marker {
+  content: none;
+}
+.slick-dots li.slick-active {
+  background-color: #fff;
+  opacity: 1;
+  position: relative;
+}
+.slick-dots li.slick-active::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 2px solid #2e7bbd;
+}
+/*=============  
+expertise section end
+=============*/
+
+/*=============  
+Media Queries
+=============*/
+@media only screen and (max-width: 1920px) {
+  .container-custom {
+    padding: 0 140px !important;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .container-custom {
+    padding: 0 70px !important;
+  }
+  .navbar-nav {
+    gap: 40px;
+  }
+}
